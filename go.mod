@@ -1,3 +1,3 @@
-module github.com/jmarcantony/minify
+module github.com/jmarcantony/smolgo
 
 go 1.17
