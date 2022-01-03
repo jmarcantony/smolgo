@@ -24,7 +24,5 @@ func main() {
 	file, c := RemoveNewLine(file)
 	file = RemoveSpaces(file)
 	file = RemoveSemiColon(file, c)
-	for _, b := range file {
-		fmt.Printf("%c", b)
-	}
+	fmt.Println(string(file))
 }

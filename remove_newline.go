@@ -9,7 +9,7 @@ func RemoveNewLine(f []byte) ([]byte, map[int]bool) {
 		if v == ';' {
 			m[i] = true
 		}
-		if (v == '\n' && v != ';') && (prev != ';' || (prev != '"' && !IsAlphabet(prev))) {
+		if (v == '\n' && v != ';') && (prev != ';' || !IsAlphabet(prev)) {
 			f[i] = ';'
 		}
 		prev = v
